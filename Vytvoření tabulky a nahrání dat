@@ -7,9 +7,29 @@ SELECT * FROM czechia_price cp
 WHERE 1=0; 
 
 
--- Nahrání dat z exitující tabulky 
+-- Nahrání dat z existující tabulky 
 
 INSERT INTO t_dominik_drazan_project_sql_primary_final SELECT *
 FROM czechia_price;
+
+
+SELECT *
+FROM t_dominik_drazan_project_sql_primary_final tddpspf; 
+
+
+DESCRIBE t_dominik_drazan_project_sql_primary_final;
+
+
+
+
+SELECT *
+FROM t_dominik_drazan_project_sql_primary_final prmfnl 
+JOIN czechia_payroll cpay 
+	ON  cpay.payroll_year = year(prmfnl.date_from); 
+
+
+
+
+
 
 
