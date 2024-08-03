@@ -1,0 +1,15 @@
+-- vytvoření tabulky t_dominik_drazan_project_sql_primary_final
+
+
+
+CREATE TABLE t_dominik_drazan_project_sql_primary_final AS
+SELECT * FROM czechia_price cp 
+WHERE 1=0; 
+
+
+-- Nahrání dat z exitující tabulky 
+
+INSERT INTO t_dominik_drazan_project_sql_primary_final SELECT *
+FROM czechia_price;
+
+
