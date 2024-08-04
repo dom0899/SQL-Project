@@ -42,6 +42,30 @@ SELECT * FROM economies;
 
 
 
+SELECT 
+	country AS "evropské státy",
+	`year` AS "roky 2017 a 2018",
+	round(avg(GDP), 2) AS "hrubý domácí produkt",
+	round(population, 2) AS "populace",
+	gini AS "Giniho koeficient"
+FROM t_dominik_drazan_project_sql_secondary_final sndrfl
+WHERE country LIKE '';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
