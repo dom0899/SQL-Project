@@ -1,4 +1,5 @@
--- vytvoření tabulky t_dominik_drazan_project_sql_primary_final
+-- vytvoření tabulky:
+-- t_dominik_drazan_project_sql_primary_final
 
 SELECT 
 	cpay.value AS "mzdy",
@@ -11,6 +12,47 @@ JOIN czechia_payroll cpay
 	ON  cpay.payroll_year = year(prmfnl.date_from)
 WHERE cpay.value IS NOT NULL
 	AND prmfnl.region_code IS NOT NULL;
+
+
+
+
+
+
+
+-- Vytvoření tabulky:
+-- t_{jmeno}_{prijmeni}_project_SQL_secondary_final
+
+
+
+
+CREATE TABLE t_dominik_drazan_project_SQL_secondary_final AS 
+SELECT * FROM economies e 
+WHERE 1=0;
+
+
+
+-- Nahrání dat do tabulky:
+-- t_{jmeno}_{prijmeni}_project_SQL_secondary_final
+
+
+INSERT INTO t_dominik_drazan_project_SQL_secondary_final 
+SELECT * FROM economies; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
