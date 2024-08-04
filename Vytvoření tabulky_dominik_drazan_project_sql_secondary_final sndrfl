@@ -1,0 +1,20 @@
+
+
+-- Finální dotaz 
+
+SELECT
+	country AS "evropské státy",
+	`year` AS "roky 2017 a 2018",
+	GDP AS "HDP",
+	population AS "populace",
+	gini AS "Giniho koeficient"
+FROM t_dominik_drazan_project_sql_secondary_final sndrfl
+WHERE country IN (
+    'Germany', 'France', 'Italy', 'Spain', 'Netherlands',
+    'Sweden', 'Poland', 'Belgium', 'Austria', 'Denmark', 'Finland',
+    'Greece', 'Portugal', 'Ireland', 'Czech Republic', 'Romania',
+    'Hungary', 'Slovakia', 'Luxembourg', 'Bulgaria', 'Slovenia',
+    'Lithuania', 'Latvia', 'Cyprus', 'Estonia', 'Malta'
+)
+AND `year` BETWEEN 2017 AND 2018
+AND gini IS NOT NULL;
