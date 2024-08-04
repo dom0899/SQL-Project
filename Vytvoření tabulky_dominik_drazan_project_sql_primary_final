@@ -1,0 +1,12 @@
+
+SELECT 
+	cpay.value AS "mzdy",
+	prmfnl.value AS "ceny",
+	cpay.payroll_year AS "roky mezd za 2017 a 2018",
+	date_format(prmfnl.date_from, '%Y') AS "ceny potravin za rok 2017 a 2018",
+	prmfnl.region_code AS "všechny kraje z celé ČR"
+FROM t_dominik_drazan_project_sql_primary_final prmfnl 
+JOIN czechia_payroll cpay 
+	ON  cpay.payroll_year = year(prmfnl.date_from)
+WHERE cpay.value IS NOT NULL
+	AND prmfnl.region_code IS NOT NULL;
