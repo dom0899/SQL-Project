@@ -22,4 +22,10 @@ WHERE cpay.value_type_code = 5958;
 
 -- Podle sledování kvartálů to vypadá,
 -- že ve 4. kvartálu se mzda vždy liší a to tím rozdílem, 
--- že je vyšší než ty ostatní první tři. 
+-- že je vyšší než ty ostatní první tři.
+
+-- Po analyzování všech dat z tohoto dotazu vychází následující odpověď:
+-- Zvyšování se v různých odvětvích mírně liší a to zvedáním, či snižováním mezd.¨
+-- Z většiny oboru bylo patrné, že se postupem roků mzda vždy zvyšuje ve 4. kvartálu.
+-- Celkové shrnutí je, že minimálních případech a kvartálech se mzda kolísavým 
+-- způsobem snižuje. Ve většině případů se mzda zvyšuje. 
