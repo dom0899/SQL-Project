@@ -1,3 +1,3 @@
 # SQL-Project
 
-#Zkušební verze
+Zkušební verze
